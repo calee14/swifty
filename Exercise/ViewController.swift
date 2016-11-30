@@ -9,7 +9,23 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    var num = 0
+    @IBOutlet weak var theLabel: UILabel!
+    
+    @IBAction func pushMe(_ sender: Any) {
+        num+=1
+        /*
+        if theLabel.text == "Yay" {
+            theLabel.text = "Hi"
+        } else {
+            theLabel.text = "Yay"
+        }
+        */
+        if num == 10 {
+            theLabel.text = "You pushed it in me 10 times"
+        }
+        print("Butts touched")
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
