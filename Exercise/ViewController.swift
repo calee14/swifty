@@ -9,7 +9,9 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
     var num = 0
+    
     @IBOutlet weak var theLabel: UILabel!
     
     @IBAction func pushMe(_ sender: Any) {
