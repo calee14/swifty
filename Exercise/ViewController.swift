@@ -12,10 +12,17 @@ class ViewController: UIViewController {
     
     var num = 0
     
+    @IBOutlet weak var Text1: UITextField!
+    
+    @IBOutlet weak var Text2: UITextField!
+    
     @IBOutlet weak var theLabel: UILabel!
     
     @IBAction func pushMe(_ sender: Any) {
-        num+=1
+        
+        print(Text1.text!)
+        print(Text2.text!)
+        //num+=1
         /*
         if theLabel.text == "Yay" {
             theLabel.text = "Hi"
@@ -23,11 +30,14 @@ class ViewController: UIViewController {
             theLabel.text = "Yay"
         }
         */
+        /*
         if num == 10 {
             theLabel.text = "You pushed it in me 10 times"
         }
+        */
         print("Butts touched")
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
