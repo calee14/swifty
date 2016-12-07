@@ -20,20 +20,26 @@ class ViewController: UIViewController {
     
     @IBAction func pushMe(_ sender: Any) {
         
-        theLabel.text = "Answer \(Double(Text1.text!)! + Double(Text2.text!)!)"
+        let addition = false
+        
+        if addition {
+            theLabel.text = "Answer \(Double(Text1.text!)! + Double(Text2.text!)!)"
+        } else {
+            theLabel.text = "Answer \(Double(Text1.text!)! - Double(Text2.text!)!)"
+        }
         //num+=1
         /*
-        if theLabel.text == "Yay" {
-            theLabel.text = "Hi"
-        } else {
-            theLabel.text = "Yay"
-        }
-        */
+         if theLabel.text == "Yay" {
+         theLabel.text = "Hi"
+         } else {
+         theLabel.text = "Yay"
+         }
+         */
         /*
-        if num == 10 {
-            theLabel.text = "You pushed it in me 10 times"
-        }
-        */
+         if num == 10 {
+         theLabel.text = "You pushed it in me 10 times"
+         }
+         */
         print("Butts touched")
     }
     
@@ -41,12 +47,12 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    
 }
 
