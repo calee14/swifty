@@ -40,7 +40,7 @@ class ViewController: UIViewController {
          theLabel.text = "You pushed it in me 10 times"
          }
          */
-        print("Butts touched")
+        print("Nothing touched")
     }
     
     override func viewDidLoad() {
